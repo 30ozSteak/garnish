@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/LandingLoading.css";
+import "../Styles/colors.css";
 
 const LandingLoading = () => {
   return (

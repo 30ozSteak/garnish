@@ -48,12 +48,12 @@
 }
 
 .ish {
-  border: 5px solid #68d8b8;
+  border: 5px solid var(--GFmint);
   padding: 2px;
 }
 
 .logo-subtitle {
-  animation: appear 8.5s linear;
+  animation: appear 7.5s linear;
   font-size: 0.8rem;
   font-weight: 200;
   margin-top: -15px;
@@ -130,5 +130,5 @@
   animation-delay: 4.3s;
 }
 .slot-value:nth-child(6) {
-  animation-delay: 5.5s;
+  animation-delay: 5.3s;
 }
