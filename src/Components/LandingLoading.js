@@ -3,7 +3,7 @@ import "../Styles/LandingLoading.css";
 
 const LandingLoading = () => {
   return (
-    <div className="slottest-box">
+    <div className="bigger-slot-box">
       <div className="slot-box">
         <h1 class="slot-machine">
           <span class="slot-value slot-value-initial slot-value-slide-out">
