@@ -20,14 +20,18 @@ export default class Menu extends Component {
 
   render() {
     return (
-      <div className="fab-literal">
-        <ul className={this.state.buttonState}>
-          <div>
-            <li />
-            <li />
-            <li />
-          </div>
-        </ul>
+      <div className="fab-box">
+        <div className="fab-literal" onClick={this.toggleActive}>
+          <ul className={this.state.buttonState}>
+            <div>
+              <NavLink to="/home" onClick={this.props.handlePeopleLink} />
+              <NavLink to="/notes" onClick={this.props.handleNotesLink} />
+              <NavLink to="/settings" onClick={this.props.handleSettingsLink} />
+              <li />
+              <li />
+            </div>
+          </ul>
+        </div>
       </div>
     );
   }
