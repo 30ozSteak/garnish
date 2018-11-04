@@ -1,9 +1,11 @@
 import React from "react";
-import "../Styles/LandingLoading.css";
+import "../Brand/LandingLoading";
+import "../Brand/LandingLoading.css";
+import "../../Styles/colors.css";
 
 const LandingLoading = () => {
   return (
-    <div className="slottest-box">
+    <div className="bigger-slot-box">
       <div className="slot-box">
         <h1 class="slot-machine">
           <span class="slot-value slot-value-initial slot-value-slide-out">

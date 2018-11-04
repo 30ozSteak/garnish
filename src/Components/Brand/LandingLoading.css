@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.slottest-box {
+.bigger-slot-box {
   display: flex;
   justify-content: center;
 }
@@ -36,24 +36,24 @@
 }
 
 .slot-value-slide-out {
-  animation: slide-out 0.5s ease-in forwards;
+  animation: slide-out 0.8s forwards;
 }
 
 .slot-cycle {
-  animation: slide-in-and-out 1.3s ease-in;
+  animation: slide-in-and-out 1.5s;
 }
 
 .slot-value-final {
-  animation: slide-in 1.6s ease-in forwards;
+  animation: slide-in 1.4s ease-in forwards;
 }
 
 .ish {
-  border: 5px solid #68d8b8;
+  border: 5px solid var(--GFmint);
   padding: 2px;
 }
 
 .logo-subtitle {
-  animation: appear 8.5s linear;
+  animation: appear 7.5s linear;
   font-size: 0.8rem;
   font-weight: 200;
   margin-top: -15px;
@@ -91,7 +91,7 @@
 
 @keyframes slide-out {
   10% {
-    transform: translate(20px, -15%);
+    transform: translate(20px, 0%);
   }
   100% {
     transform: translate(20px, 105%);
@@ -109,7 +109,7 @@
     transform: translate(20px, 0);
   }
   70% {
-    transform: translate(20px, -15%);
+    transform: translate(20px, 0);
   }
   100% {
     transform: translate(20px, 105%);
@@ -124,11 +124,11 @@
   animation-delay: 2.2s;
 }
 .slot-value:nth-child(4) {
-  animation-delay: 3.3s;
+  animation-delay: 3.2s;
 }
 .slot-value:nth-child(5) {
-  animation-delay: 4.3s;
+  animation-delay: 4.2s;
 }
 .slot-value:nth-child(6) {
-  animation-delay: 5.5s;
+  animation-delay: 5.2s;
 }
