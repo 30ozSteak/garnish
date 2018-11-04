@@ -22,8 +22,7 @@ export default class Menu extends Component {
       <div className="menu">
         <div className="menu-button" onClick={this.toggleActive} />
         <ul className={this.state.buttonState}>
-          <div className="cross" onClick={this.toggleActive}>
-          </div>
+          <span onClick={this.toggleActive} className='cross'>+</span>
           <div>
             <NavLink to="/home" onClick={this.props.handlePeopleLink} />
             <NavLink to="/notes" onClick={this.props.handleNotesLink} />
