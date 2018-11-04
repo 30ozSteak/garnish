@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Logo />
-        <LandingLoading />
+        {/* <LandingLoading /> */}
         <Fab />
         {/* <Route exact path="/" component={LandingLoading} /> */}
 

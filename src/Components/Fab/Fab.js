@@ -7,8 +7,7 @@ export default class Menu extends Component {
   constructor(props, favorites) {
     super(props);
     this.state = {
-      buttonState: "",
-      favorites: []
+      buttonState: ""
     };
   }
 
@@ -20,12 +19,15 @@ export default class Menu extends Component {
 
   render() {
     return (
-      <div className="fab-literal">
+      <div className="menu">
+        <div className="menu-button" onClick={this.toggleActive} />
         <ul className={this.state.buttonState}>
+          <span onClick={this.toggleActive} className='cross'><p>+</p></span>
           <div>
-            <li />
-            <li />
-            <li />
+            <NavLink to="/home" onClick={this.props.handlePeopleLink} />
+            <NavLink to="/notes" onClick={this.props.handleNotesLink} />
+            <NavLink to="/settings" onClick={this.props.handleSettingsLink} />
+
           </div>
         </ul>
       </div>
