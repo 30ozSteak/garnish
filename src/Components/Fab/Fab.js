@@ -22,9 +22,8 @@ export default class Menu extends Component {
       <div className="menu">
         <div className="menu-button" onClick={this.toggleActive} />
         <ul className={this.state.buttonState}>
-          <div className="cross">
-            <div className="cross-horizontal" />
-            <div className="cross-vertical" />
+          <div className="cross" onClick={this.toggleActive}>
+            <img src="../../Styles/assets/add.svg" />
           </div>
           <div>
             <NavLink to="/home" onClick={this.props.handlePeopleLink} />

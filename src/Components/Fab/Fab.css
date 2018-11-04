@@ -10,7 +10,7 @@
 }
 
 .menu-button {
-  background: center url(../../Styles/assets/add.svg);
+  /* background: center url(../../Styles/assets/add.svg); */
   background-color: var(--GFmint);
   background-repeat: no-repeat;
   background-size: 20px;
@@ -50,10 +50,6 @@
   transform: scale(1);
 }
 
-.menu ul.active .menu-button {
-  width: 500rem;
-}
-
 .menu ul.active a:nth-child(1) {
   background: center url(../../Styles/assets/home.png);
   background-color: var(--GFmint);
@@ -80,3 +76,11 @@
   left: 0;
   top: -130%;
 }
+
+/* .cross {
+  transition: .2s;
+  background: center url(../../Styles/assets/add.svg);
+  background-size: 30px;
+  left: 0;
+  background-repeat: no-repeat;
+} */
