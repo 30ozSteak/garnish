@@ -1,6 +1,7 @@
 import React from "react";
-import "../Styles/LandingLoading.css";
-import "../Styles/colors.css";
+import "../Brand/LandingLoading";
+import "../Brand/LandingLoading.css";
+import "../../Styles/colors.css";
 
 const LandingLoading = () => {
   return (

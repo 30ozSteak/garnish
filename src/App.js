@@ -1,13 +1,16 @@
 import React, { Component } from "react";
-import LandingLoading from "./Components/LandingLoading";
+import LandingLoading from "./Components/Brand/LandingLoading";
 import { Route } from "react-router-dom";
+import Logo from "./Components/Brand/Logo";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <LandingLoading /> */}
-        <Route exact path="/" component={LandingLoading} />
+        <Logo />
+        <LandingLoading />
+        {/* <Route exact path="/" component={LandingLoading} /> */}
+
         {/* <Route exact path="/tech" component = {techCrunch} /> */}
       </div>
     );
