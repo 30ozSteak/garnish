@@ -14,7 +14,6 @@
   background-color: var(--GFmint);
   background-repeat: no-repeat;
   background-size: 20px;
-  border-radius: 50%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.082);
   height: 50px;
   right: 20px;
@@ -31,7 +30,6 @@
 
 .menu a {
   background: var(--GFmint);
-  border-radius: 50%;
   height: 100%;
   left: 0;
   overflow: hidden;
@@ -40,6 +38,7 @@
   transform: scale(0);
   transition: .5s;
   width: 100%;
+  z-index: 50;
 }
 
 .menu a:hover {
@@ -50,13 +49,20 @@
   transform: scale(1);
 }
 
+.menu ul.active {
+  height: 90px;
+  width: 90px;
+}
+
 .menu ul.active a:nth-child(1) {
   background: center url(../../Styles/assets/home.png);
   background-color: var(--GFmint);
   background-repeat: no-repeat;
   background-size: 20px;
-  left: -130%;
-  top: 0;
+  top: -100%;
+  transition-delay: 0s;
+  filter: brightness(110%);
+  z-index: 2
 }
 
 .menu ul.active a:nth-child(2) {
@@ -64,8 +70,10 @@
   background-color: var(--GFmint);
   background-repeat: no-repeat;
   background-size: 20px;
-  left: -90%;
-  top: -90%;
+  top: -200%;
+  transition-delay: .2s;
+  filter: brightness(115%);
+  z-index: 1;
 }
 
 .menu ul.active a:nth-child(3) {
@@ -73,6 +81,19 @@
   background-color: var(--GFmint);
   background-repeat: no-repeat;
   background-size: 20px;
+  top: -300%;
+  transition-delay: .4s;
+  filter: brightness(120%);
+  z-index: 0;
+}
+
+.cross {
+  transition: .2s;
+  background-color: red;
+  position: absolute;
+  background: center url(../../Styles/assets/add.svg);
+  background-size: 30px;
   left: 0;
-  top: -130%;
+  top: 0;
+  background-repeat: no-repeat;
 }
