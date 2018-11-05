@@ -1,0 +1,15 @@
+.homeHeader {
+  padding: 1rem;
+}
+
+.homeHeader h1 {
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: var(--NotBlack);
+}
+
+.homeHeader h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--GFmint);
+}
