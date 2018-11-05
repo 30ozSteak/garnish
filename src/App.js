@@ -5,12 +5,13 @@ import Logo from "./Components/Brand/Logo";
 import Fab from "./Components/Fab/Fab";
 import HomeHeader from "./Components/HomeHeader/HomeHeader";
 import Article from "./Components/Article/Article";
-
+import Header from "./Components/Header/Header";
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Logo />
+        {/* <Logo /> */}
+        <Header />
         {/* <LandingLoading /> */}
         <Fab />
         <HomeHeader />
