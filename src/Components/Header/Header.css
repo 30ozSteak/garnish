@@ -1,7 +1,14 @@
 .mucho-header-box {
   display: grid;
-  grid-template-columns: 5rem 1fr 5rem;
+  grid-template-columns: 5rem 1fr 2rem;
   margin: 0;
   padding: 0;
-  background-color: red;
+}
+
+.magnifying-glass {
+  background: url(../../Styles/assets/search.svg);
+  height: 25px;
+  margin-top: 1rem;
+  width: 25px;
+  background-repeat: no-repeat;
 }
