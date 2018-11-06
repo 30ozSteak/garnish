@@ -1,0 +1,15 @@
+.categories {
+  margin-top: 3rem;
+  padding: 1rem;
+  color: var(--NotBlack);
+}
+
+.categories h1 {
+  width: 20rem;
+}
+
+.cat-box {
+  background-color: blue;
+  height: 100vh;
+  width: 100%;
+}

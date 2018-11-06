@@ -1,0 +1,14 @@
+.home-header {
+  padding: 1rem;
+  color: var(--NotBlack);
+}
+
+.homeheader h1 {
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.home-header h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
