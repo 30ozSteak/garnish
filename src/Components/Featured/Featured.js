@@ -5,12 +5,19 @@ import Channels from "../../Containers/Channels/Channels";
 const Featured = () => (
   <div className="featured-container">
     <div className="featured-box">
-      <Channels channelName="Tech" channelString="Tech" />
-      <Channels channelName="Memes" channelString="Tech" />
-      <Channels channelName="Web Dev" channelString="Tech" />
-      <Channels channelName="Tech" channelString="Tech" />
-      <Channels channelName="Tech" channelString="Tech" />
+      <Channels channelName="tech" channelString="whats new in tech" />
+      <Channels
+        channelName="memes"
+        channelString="what the h*ck is a fortnite floss"
+      />
+      <Channels channelName="abramov" channelString="whatever dan says" />
+      <Channels channelName="culture" channelString="learn some things" />
+      <Channels
+        channelName="top"
+        channelString="for when you want to be depressed"
+      />
     </div>
+    <p className="scroll-text">scroll for more</p>
   </div>
 );
 

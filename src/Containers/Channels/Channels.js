@@ -7,6 +7,7 @@ export const Channel = ({ channelName, channelString, onClick, active }) => (
   <div onClick={onClick} className="channel-box">
     <div className="channel-button">
       <p>{channelName}</p>
+      <p className="channel-desc">{channelString}</p>
     </div>
   </div>
 );
