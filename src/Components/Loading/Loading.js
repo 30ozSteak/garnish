@@ -6,9 +6,15 @@ const Loading = () => {
     <div className="loading-box">
       <div className="squared" />
       <div className="loading-wrapper">
-        <p>Loading</p>
-        <p>Loading</p>
-        <p>Loading</p>
+        <p>
+          <span>L</span>
+          <span>o</span>
+          <span>a</span>
+          <span>d</span>
+          <span>i</span>
+          <span>n</span>
+          <span>g</span>
+        </p>
       </div>
     </div>
   );
