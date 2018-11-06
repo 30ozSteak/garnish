@@ -35,6 +35,7 @@
 }
 
 .channel-button p {
+  color: var(--NotBlack);
   font-size: 4.3rem;
   font-weight: 600;
   padding: 1.5rem 0.5rem 0 1rem;

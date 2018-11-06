@@ -17,11 +17,8 @@
 }
 
 .dark-mode {
-  filter: invert(1);
-}
-
-.dark-mode {
   background-image: url(../../Styles/assets/night.svg);
+  filter: invert(1);
 }
 
 .light-mode {

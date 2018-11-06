@@ -4,4 +4,11 @@
 
 .logo-box .ish {
   margin-left: 2px;
+  transition: 0.4s;
+}
+
+.logo-box .ish:hover {
+  box-shadow: 2px 2px 10px lightgray;
+  cursor: pointer;
+  filter: brightness(105%);
 }
