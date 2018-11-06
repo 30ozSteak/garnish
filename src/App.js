@@ -16,9 +16,9 @@ class App extends Component {
         <Header />
         {/* <LandingLoading /> */}
         <Loading />
-        <Fab />
+        {/* <Fab />
         <HomeHeader />
-        <Article />
+        <Article /> */}
         {/* <Route exact path="/" component={LandingLoading} /> */}
 
         {/* <Route exact path="/tech" component = {techCrunch} /> */}
