@@ -8,7 +8,7 @@ import Article from "./Components/Article/Article";
 import Header from "./Components/Header/Header";
 import Featured from "./Components/Featured/Featured";
 import Loading from "./Components/Loading/Loading";
-import Categories from "./Components/Categories/Categories";
+import News from "./Components/News/News";
 
 class App extends Component {
   render() {
@@ -21,7 +21,7 @@ class App extends Component {
         <Fab />
         <HomeHeader />
         <Featured />
-        <Categories />
+        <News />
         {/* <Article /> */}
         {/* <Route exact path="/" component={LandingLoading} /> */}
 
