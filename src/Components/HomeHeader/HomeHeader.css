@@ -1,6 +1,7 @@
 .home-header {
   padding: 1rem;
   color: var(--NotBlack);
+  width: 80%;
 }
 
 .homeheader h1 {
