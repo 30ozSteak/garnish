@@ -6,6 +6,8 @@ import Fab from "./Components/Fab/Fab";
 import HomeHeader from "./Components/HomeHeader/HomeHeader";
 import Article from "./Components/Article/Article";
 import Header from "./Components/Header/Header";
+import Loading from "./Components/Loading/Loading";
+
 class App extends Component {
   render() {
     return (
@@ -13,6 +15,7 @@ class App extends Component {
         {/* <Logo /> */}
         <Header />
         {/* <LandingLoading /> */}
+        <Loading />
         <Fab />
         <HomeHeader />
         <Article />

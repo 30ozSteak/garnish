@@ -13,7 +13,7 @@
   background-color: var(--GFmint);
   background-repeat: no-repeat;
   background-size: 20px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.082);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
   height: 50px;
   right: 20px;
   width: 50px;
@@ -82,19 +82,17 @@
 }
 
 .cross {
-  background-repeat: no-repeat;
-  background-size: 30px;
   color: white;
   font-size: 2.5rem;
-  height: 100%;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
   position: absolute;
   text-align: center;
-  transition: 0.2s;
-  width: 100%;
+  transition: 0.5s;
   z-index: 5;
 }
 
 .cross:hover {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
-  filter: brightness(105%);
 }
