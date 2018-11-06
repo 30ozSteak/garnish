@@ -1,4 +1,23 @@
-.featured-box {
+.featured-container {
   height: 15rem;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.featured-box {
+  display: flex;
+  border: none;
+}
+
+.channel-box {
   background-color: red;
+  padding: 1rem;
+  height: 12.5rem;
+}
+
+.channel-button {
+  width: 18rem;
+  height: 10rem;
+  background-color: white;
+  box-shadow: 1px 1px 1px var(--NotBlack);
 }
