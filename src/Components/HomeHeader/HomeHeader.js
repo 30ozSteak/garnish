@@ -3,7 +3,7 @@ import "./HomeHeader.css";
 
 const HomeHeader = () => {
   return (
-    <div className="homeHeader">
+    <div className="home-header">
       <h1>Hello, nick</h1>
       <h3>Here are 5 stories worth reading today</h3>
     </div>
