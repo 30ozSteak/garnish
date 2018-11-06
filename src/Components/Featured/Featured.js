@@ -1,8 +1,11 @@
 import React from "react";
 import "./Featured.css";
+import Channels from "../../Containers/Channels/Channels";
 
-const Featured = () => {
-  return <div className="featured-box" />;
-};
+const Featured = () => (
+  <div className="featured-box">
+    <Channels channelName="Tech" channelString="Tech" />
+  </div>
+);
 
 export default Featured;

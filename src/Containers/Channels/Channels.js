@@ -1,10 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import { getChannel, activeChannel } from "../actions";
+import { getChannel, activateChannel } from "../../Actions/index";
 
-const Channel = ({ channelName, channelString, onClick, active }) => (
-  <div onClick={onClick} className="featured -box">
-    <div className="featured-button">
+export const Channel = ({ channelName, channelString, onClick, active }) => (
+  <div onClick={onClick} className="channel-box">
+    <div className="channel-button">
       <p>{channelName}</p>
     </div>
   </div>
