@@ -3,8 +3,9 @@ export const isLoading = status => ({
   status
 });
 
-export const initialLoading = () => ({
-  type: "INITIAL_LOADING"
+export const initialLoading = status => ({
+  type: "INITIAL_LOADING",
+  status
 });
 
 export const isDarkMode = () => ({
@@ -19,4 +20,9 @@ export const addFav = articleId => ({
 export const removeFav = articleId => ({
   type: "REMOVE_FAV",
   articleId
+});
+
+export const fabActive = status => ({
+  type: "FAB_ACTIVE",
+  status
 });
