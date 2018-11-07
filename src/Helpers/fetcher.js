@@ -1,6 +1,6 @@
 import { Key } from "../Key";
 
-export const fetchTechNews = async topic => {
+export const fetchTechNews = async => {
   try {
     const response = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`;
     const techNews = await response.json();
@@ -10,7 +10,7 @@ export const fetchTechNews = async topic => {
   }
 };
 
-export const fetchMemes = async topic => {
+export const fetchMemes = async => {
   try {
     const response = `https://newsapi.org/v2/everything?q=meme&apiKey=${Key}`;
     const memeNews = await response.json();
@@ -20,7 +20,7 @@ export const fetchMemes = async topic => {
   }
 };
 
-export const fetchAbramov = async topic => {
+export const fetchAbramov = async => {
   try {
     const response = `https://newsapi.org/v2/everything?q=dan+abramov&apiKey=${Key}`;
     const abramovNews = await response.json();
@@ -30,7 +30,7 @@ export const fetchAbramov = async topic => {
   }
 };
 
-export const fetchCulture = async topic => {
+export const fetchCulture = async => {
   try {
     const response = `https://newsapi.org/v2/top-headlines?q=culture&apiKey=${Key}`;
     const cultureNews = await response.json();
