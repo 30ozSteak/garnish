@@ -21,7 +21,7 @@ export const fetchAbramov = async () => {
 
 export const fetchCulture = async () => {
   return await fetchRequest(
-    `https://newsapi.org/v2/top-headlines?q=culture&apiKey=${Key}`
+    `https://newsapi.org/v2/everything?q=culture&apiKey=${Key}`
   );
 };
 

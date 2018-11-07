@@ -7,7 +7,7 @@ const Featured = ({
   handleMemeLink,
   handleAbramovLink,
   handleCultureLink,
-  handleTopLink
+  handleTopNewsLink
 }) => (
   <div className="featured-container">
     <div className="featured-box">
@@ -34,7 +34,7 @@ const Featured = ({
       <Channels
         channelName="top news"
         channelString="for when you want to be sad"
-        handleFetch={handleTopLink}
+        handleFetch={handleTopNewsLink}
       />
     </div>
     <p className="scroll-text">scroll for more</p>
