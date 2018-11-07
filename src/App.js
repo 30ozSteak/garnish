@@ -8,7 +8,6 @@ import Header from "./Components/Header/Header";
 import Featured from "./Components/Featured/Featured";
 import Loading from "./Components/Loading/Loading";
 import News from "./Components/News/News";
-import Button from "./Containers/Button/Button";
 import NewsBox from "./Containers/NewsContainer/NewsBox";
 
 class App extends Component {
@@ -21,7 +20,6 @@ class App extends Component {
         <Fab />
         <HomeHeader />
         <Featured />
-        <Button />
         {/* <News /> */}
         {/* <Route exact path="/tech" component = {techCrunch} /> */}
       </div>
