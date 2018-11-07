@@ -4,20 +4,7 @@ import { connect } from "react-redux";
 import News from "../../Components/News/News";
 import Loading from "../../Components/Loading/Loading";
 
-const NewsBox = ({ channels, loading }) => {
-  let topNews = "";
-  if (channels) {
-    topNews = channels.map((article, index) => (
-      <div key={`${index}`} className="row">
-        <News article={channels[index]} />
-      </div>
-    ));
-  }
-  if (loading) {
-    topNews = <Loading />;
-  }
-  return <div>{topNews}</div>;
-};
+const NewsBox = ({ channels, loading }) => {};
 
 const mapStateToProps = state => ({});
 
