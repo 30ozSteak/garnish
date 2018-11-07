@@ -8,6 +8,7 @@ export const fetchTechNews = async topic => {
 
   return articles.map(article => {
     return {
+      // UUID
       title: article.title,
       author: article.arthur,
       description: article.description,
