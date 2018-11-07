@@ -1,16 +1,8 @@
-import { SELECT_CHANNEL, REQUEST_POSTS, RECEIVE_POSTS } from "../Actions/index";
+import { combineReducers } from "redux";
+import { darkMode } from "./darkModeReducer";
+import { isLoading } from "./isLoadingReducer";
 
-const reducer = (state = {}, action) => {
-  switch (action.type) {
-    case SELECT_CHANNEL:
-      return { ...state, channel: action.channel };
-    case REQUEST_POSTS:
-      return { ...state, loading: true };
-    case RECEIVE_POSTS:
-      return { ...state, json: action.json, loading: false };
-    default:
-      return state;
-  }
-};
-
-export default reducer;
+export const rootReducer = combineReducers({
+  darkMode,
+  isLoading
+});
