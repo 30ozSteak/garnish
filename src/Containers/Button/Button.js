@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchLatestTech } from "../../Helpers/apicaller";
+import { fetchRequest } from "../../Helpers/apicaller";
 import { Route, NavLink, withRouter, Switch, Redirect } from "react-router-dom";
 
 const Button = ({ getPosts, channel }) => (
@@ -16,7 +16,7 @@ const Button = ({ getPosts, channel }) => (
 
 const mapStateToProps = state => ({ channel: state.channel });
 
-const mapDispatchToProps = { getPosts: fetchLatestTech };
+const mapDispatchToProps = { getPosts: fetchRequest };
 
 export default withRouter(
   connect(

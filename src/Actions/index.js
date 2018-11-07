@@ -16,19 +16,3 @@ export const receivedPosts = json => ({
   type: RECEIVE_POSTS,
   json: json.articles
 });
-
-export function fetchPosts(channel) {
-  return function(dispatch) {
-    dispatch(requestPosts());
-    return fetch(
-      `https://newsapi.org/v1/articles?source=${channel}&apiKey=${Key}`
-    )
-      .then(
-        response => response.json(),
-        error => console.log("an error occured.", error)
-      )
-      .then(json => {
-        dispatch(receivedPosts(json));
-      });
-  };
-}
