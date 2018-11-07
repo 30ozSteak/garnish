@@ -11,48 +11,33 @@ import {
   fetchCulture,
   fetchTopNews
 } from "../../Helpers/fetcher";
+import { updateNews } from "../../Actions/index";
+import { connect } from "react-redux";
 
-class Main extends Component {
-  constructor() {
-    super();
-    this.state = {
-      news: []
-    };
-  }
-
+export class Main extends Component {
   handleTechLink = async () => {
     const tech = await fetchTechNews();
-    this.setState({
-      news: tech.articles
-    });
+    this.props.updateNews(tech.articles);
   };
 
   handleMemeLink = async () => {
     const meme = await fetchMemes();
-    this.setState({
-      news: meme.articles
-    });
+    this.props.updateNews(meme.articles);
   };
 
   handleAbramovLink = async () => {
     const abramov = await fetchAbramov();
-    this.setState({
-      news: abramov.articles
-    });
+    this.props.updateNews(abramov.articles);
   };
 
   handleCultureLink = async () => {
     const culture = await fetchCulture();
-    this.setState({
-      news: culture.articles
-    });
+    this.props.updateNews(culture.articles);
   };
 
   handleTopNewsLink = async () => {
     const top = await fetchTopNews();
-    this.setState({
-      news: top.articles
-    });
+    this.props.updateNews(top.articles);
   };
 
   render() {
@@ -69,10 +54,22 @@ class Main extends Component {
           handleTopNewsLink={this.handleTopNewsLink}
         />
         <div className="biggest-news-box">
-          <NewsCard news={this.state.news} />
+          <NewsCard news={this.props.news} />
         </div>
       </div>
     );
   }
 }
-export default Main;
+
+export const mapStateToProps = ({ news }) => ({
+  news
+});
+
+export const mapDispatchToProps = dispatch => ({
+  updateNews: news => dispatch(updateNews(news))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Main);
