@@ -2,19 +2,7 @@ import React, { Component } from "react";
 import LandingLoading from "./Components/Brand/LandingLoading";
 import { Route, withRouter, Switch } from "react-router-dom";
 import { connect } from "react-redux";
-import Fab from "./Components/Fab/Fab";
-import HomeHeader from "./Components/HomeHeader/HomeHeader";
-import Header from "./Components/Header/Header";
-import Featured from "./Components/Featured/Featured";
-import Loading from "./Components/Loading/Loading";
-import NewsCard from "./Components/NewsCard/NewsCard";
-import {
-  fetchTechNews,
-  fetchMemes,
-  fetchAbramov,
-  fetchCulture,
-  fetchTopNews
-} from "./Helpers/fetcher";
+import Main from "./Components/Main/Main";
 
 class App extends Component {
   constructor() {
@@ -24,56 +12,11 @@ class App extends Component {
     };
   }
 
-  handleTechLink = async () => {
-    const tech = await fetchTechNews();
-    this.setState({
-      news: tech.articles
-    });
-  };
-
-  handleMemeLink = async () => {
-    const meme = await fetchMemes();
-    this.setState({
-      news: meme.articles
-    });
-  };
-
-  handleAbramovLink = async () => {
-    const abramov = await fetchAbramov();
-    this.setState({
-      news: abramov.articles
-    });
-  };
-
-  handleCultureLink = async () => {
-    const culture = await fetchCulture();
-    this.setState({
-      news: culture.articles
-    });
-  };
-
-  handleTopNewsLink = async () => {
-    const top = await fetchTopNews();
-    this.setState({
-      news: top.articles
-    });
-  };
-
   render() {
     return (
       <div className="App">
-        <Header />
-        {/* <LandingLoading /> */}
-        <Fab />
-        <HomeHeader />
-        <Featured
-          handleTechLink={this.handleTechLink}
-          handleMemeLink={this.handleMemeLink}
-          handleAbramovLink={this.handleAbramovLink}
-          handleCultureLink={this.handleCultureLink}
-          handleTopNewsLink={this.handleTopNewsLink}
-        />
-        <NewsCard news={this.state.news} />
+        <Route exact path="/" component={LandingLoading} />
+        <Route exact path="/main" component={Main} />
       </div>
     );
   }
@@ -86,9 +29,6 @@ export const mapStateToProps = state => ({
   fabActive: state.fabActive
 });
 
-// export const mapDispatchToProps = dispatch => ({
-
-// });
 export default withRouter(
   connect(
     mapStateToProps,
