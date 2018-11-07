@@ -20,8 +20,8 @@ const LandingLoading = () => {
           <span className="ish">ish</span>
         </h1>
         <p className="logo-subtitle">a trim of news for your day</p>
-        <NavLink to="/">continue</NavLink>
       </div>
+      <NavLink to="/main">continue</NavLink>
     </div>
   );
 };
