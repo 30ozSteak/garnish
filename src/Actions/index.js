@@ -3,6 +3,10 @@ export const isLoading = status => ({
   status
 });
 
+export const initialLoading = () => ({
+  type: "INITIAL_LOADING"
+});
+
 export const isDarkMode = () => ({
   type: "TOGGLE_DARKMODE"
 });
