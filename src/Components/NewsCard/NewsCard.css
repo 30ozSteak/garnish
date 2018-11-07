@@ -13,10 +13,30 @@
   border-radius: 4px;
   box-shadow: 5px 5px 20px lightgray;
   width: 90%;
-  margin: 1rem auto;
+  margin: 2rem auto;
+  transition: 0.5s;
+}
+
+.cat-box:hover {
+  box-shadow: 5px 5px 20px gray;
+  cursor: pointer;
 }
 
 .cat-box img {
   width: 100%;
   filter: brightness(110%);
+}
+
+.article-desc {
+  padding: 1rem;
+}
+
+.cat-box a {
+  color: darkgray;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.cat-box a:hover {
+  color: black;
 }
