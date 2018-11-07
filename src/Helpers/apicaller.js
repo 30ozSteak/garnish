@@ -1,7 +1,3 @@
-import React from "react";
-import { Key } from "../Key.js";
-import Loading from "../Components/Loading/Loading";
-
 export const fetchRequest = async url => {
   try {
     const response = await fetch(url);
