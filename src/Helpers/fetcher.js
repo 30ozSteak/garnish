@@ -7,15 +7,10 @@ export const fetchTechNews = async () => {
   );
 };
 
-export const fetchMemes = async => {
-  try {
-    const response = fetchRequest(
-      `https://newsapi.org/v2/everything?q=meme&apiKey=${Key}`
-    );
-    return response;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+export const fetchMemes = async () => {
+  return await fetchRequest(
+    `https://newsapi.org/v2/everything?q=meme&apiKey=${Key}`
+  );
 };
 
 export const fetchAbramov = async => {
