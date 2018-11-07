@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import LandingLoading from "./Components/Brand/LandingLoading";
-import { Route } from "react-router-dom";
+import { Route, withRouter, Switch } from "react-router-dom";
 import Logo from "./Components/Brand/Logo";
+import { connect } from "react-redux";
 import Fab from "./Components/Fab/Fab";
 import HomeHeader from "./Components/HomeHeader/HomeHeader";
 import Header from "./Components/Header/Header";
@@ -26,4 +27,17 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapStateToProps = state => ({
+  isLoading: state.isLoading,
+  darkMode: state.darkMode,
+  initialLoading: state.initialLoading,
+  fabActive: state.fabActive
+});
+
+export const mapDispatchToProps = dispatch => ({});
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(App)
+);
