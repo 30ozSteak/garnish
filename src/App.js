@@ -7,9 +7,15 @@ import HomeHeader from "./Components/HomeHeader/HomeHeader";
 import Header from "./Components/Header/Header";
 import Featured from "./Components/Featured/Featured";
 import Loading from "./Components/Loading/Loading";
-import News from "./Components/News/News";
+import NewsContainer from "./Containers/NewsContainer/NewsContainer";
+import { fetchTechNews } from "./Helpers/fetcher";
 
 class App extends Component {
+  handleTechLink = async () => {
+    const tech = await fetchTechNews();
+    this.props.fetchTechNews(tech);
+  };
+
   render() {
     return (
       <div className="App">
@@ -19,7 +25,7 @@ class App extends Component {
         <Fab />
         <HomeHeader />
         <Featured />
-        <News />
+        {/* <NewsContainer /> */}
       </div>
     );
   }

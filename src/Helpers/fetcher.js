@@ -1,10 +1,13 @@
 import { Key } from "../Key";
+import { fetchRequest } from "../Helpers/apicaller";
 
 export const fetchTechNews = async => {
   try {
-    const response = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`;
-    const techNews = await response.json();
-    return techNews;
+    const response = fetchRequest(
+      `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`
+    );
+    console.log(response);
+    return response;
   } catch (error) {
     throw new Error(error.message);
   }
@@ -12,9 +15,10 @@ export const fetchTechNews = async => {
 
 export const fetchMemes = async => {
   try {
-    const response = `https://newsapi.org/v2/everything?q=meme&apiKey=${Key}`;
-    const memeNews = await response.json();
-    return memeNews;
+    const response = fetchRequest(
+      `https://newsapi.org/v2/everything?q=meme&apiKey=${Key}`
+    );
+    return response;
   } catch (error) {
     throw new Error(error.message);
   }
@@ -22,9 +26,10 @@ export const fetchMemes = async => {
 
 export const fetchAbramov = async => {
   try {
-    const response = `https://newsapi.org/v2/everything?q=dan+abramov&apiKey=${Key}`;
-    const abramovNews = await response.json();
-    return abramovNews;
+    const response = fetchRequest(
+      `https://newsapi.org/v2/everything?q=dan+abramov&apiKey=${Key}`
+    );
+    return response;
   } catch (error) {
     throw new Error(error.message);
   }
@@ -32,9 +37,10 @@ export const fetchAbramov = async => {
 
 export const fetchCulture = async => {
   try {
-    const response = `https://newsapi.org/v2/top-headlines?q=culture&apiKey=${Key}`;
-    const cultureNews = await response.json();
-    return cultureNews;
+    const response = fetchRequest(
+      `https://newsapi.org/v2/top-headlines?q=culture&apiKey=${Key}`
+    );
+    return response;
   } catch (error) {
     throw new Error(error.message);
   }
@@ -42,9 +48,10 @@ export const fetchCulture = async => {
 
 export const fetchTopNews = async topic => {
   try {
-    const response = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Key}`;
-    const topNews = await response.json();
-    return topNews;
+    const response = fetchRequest(
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Key}`
+    );
+    return response;
   } catch (error) {
     throw new Error(error.message);
   }
