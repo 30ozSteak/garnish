@@ -1,5 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
 import "../../Components/Featured/Featured";
 
 export const Channels = ({ channelName, channelString, handleFetch }) => (

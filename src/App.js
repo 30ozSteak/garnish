@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import LandingLoading from "./Components/Brand/LandingLoading";
-import { Route, withRouter, Switch } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Main from "./Components/Main/Main";
 
