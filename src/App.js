@@ -4,7 +4,7 @@ import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Main from "./Components/Main/Main";
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -23,10 +23,7 @@ class App extends Component {
 }
 
 export const mapStateToProps = state => ({
-  isLoading: state.isLoading,
-  darkMode: state.darkMode,
-  initialLoading: state.initialLoading,
-  fabActive: state.fabActive
+  darkMode: state.darkMode
 });
 
 export default withRouter(

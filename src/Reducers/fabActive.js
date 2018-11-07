@@ -1,3 +1,9 @@
 export const fabActive = (state = false, action) => {
-  return action.type === "FAB_ACTIVE" ? action.status : state;
+  switch (action.type) {
+    case "FAB_ACTIVE":
+      return !state;
+
+    default:
+      return state;
+  }
 };
