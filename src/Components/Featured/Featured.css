@@ -9,7 +9,7 @@
 .featured-box {
   display: flex;
   border: none;
-  height: 13rem;
+  height: 15rem;
   margin: 0 auto;
   overflow: scroll;
 }
@@ -25,7 +25,7 @@
   background-color: white;
   border-radius: 2px;
   box-shadow: 5px 5px 20px lightgray;
-  transition: 0.2s;
+  transition: 1s;
   overflow: hidden;
 }
 
@@ -39,6 +39,10 @@
   font-size: 4.3rem;
   font-weight: 600;
   padding: 1.5rem 0.5rem 0 1rem;
+}
+
+.channel-desc {
+  margin-top: -1rem;
 }
 
 .channel-button .channel-desc {
