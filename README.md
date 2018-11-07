@@ -2,6 +2,8 @@
 
 ## a trim of news for your day
 
+## Mobile First, Millenial Friendly
+
 <img src= "https://user-images.githubusercontent.com/34214595/48156599-02cb2780-e28b-11e8-8f08-d6d1d89cbf4d.png">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To run it, clone this repo, cd into it, and type
@@ -18,17 +20,7 @@ For this challenge, I received the newsAPI as my data source, and my target audi
 
 ## Categories
 
-# Tech
-
-# Memes
-
-# Culture
-
-# Abramov
-
-# Top News
-
-## Wireframes
+# Tech Memes Culture Abramov Top News Wireframes
 
 <img width="601" alt="wireframe-swapibox" src="https://user-images.githubusercontent.com/34214595/48151993-f8576080-e27f-11e8-84c8-9c4019a5f63f.jpg">
 
