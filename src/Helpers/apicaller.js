@@ -1,11 +1,17 @@
-import { Key } from "../key";
+import React from "react";
+import { Key } from "../Key.js";
+import Loading from "../Components/Loading/Loading";
 
-export const fetchLatestTech = async () => {
-  const url = `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`;
-  const response = await fetch(url);
-  const data = await response.json();
-  const techCrunchData = await techCrunch(data);
-  return techCrunchData;
+export const fetchLatestTech = async category => {
+  try {
+    const response = await fetch(
+      `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`
+    );
+    const techNews = await response.json();
+    return techNews;
+  } catch {
+    return <Loading />;
+  }
 };
 
 export const techCrunch = async data => {
@@ -22,5 +28,3 @@ export const techCrunch = async data => {
   });
   return techDetails;
 };
-
-export default fetchLatestTech;
