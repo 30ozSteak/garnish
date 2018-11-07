@@ -19,10 +19,7 @@ const NewsBox = ({ channels, loading }) => {
   return <div>{topNews}</div>;
 };
 
-const mapStateToProps = state => ({
-  channels: state.json,
-  loading: state.loading
-});
+const mapStateToProps = state => ({});
 
 export default connect(
   mapStateToProps,
