@@ -2,7 +2,7 @@
 
 ## a trim of news for your day
 
-<img width="601" alt="https://user-images.githubusercontent.com/34214595/48156599-02cb2780-e28b-11e8-8f08-d6d1d89cbf4d.png">
+<img src= "https://user-images.githubusercontent.com/34214595/48156599-02cb2780-e28b-11e8-8f08-d6d1d89cbf4d.png">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To run it, clone this repo, cd into it, and type
 
