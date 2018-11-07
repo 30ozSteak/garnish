@@ -20,8 +20,7 @@ class App extends Component {
         <Fab />
         <HomeHeader />
         <Featured />
-        {/* <News /> */}
-        {/* <Route exact path="/tech" component = {techCrunch} /> */}
+        <News />
       </div>
     );
   }
