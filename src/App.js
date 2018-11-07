@@ -8,12 +8,22 @@ import Header from "./Components/Header/Header";
 import Featured from "./Components/Featured/Featured";
 import Loading from "./Components/Loading/Loading";
 import NewsContainer from "./Containers/NewsContainer/NewsContainer";
+import NewsCard from "./Components/NewsCard/NewsCard";
 import { fetchTechNews } from "./Helpers/fetcher";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      news: []
+    };
+  }
   handleTechLink = async () => {
     const tech = await fetchTechNews();
-    this.props.fetchTechNews(tech);
+    this.setState({
+      news: tech.articles
+    });
+    console.log(tech);
   };
 
   render() {
@@ -24,8 +34,8 @@ class App extends Component {
         {/* <Loading /> */}
         <Fab />
         <HomeHeader />
-        <Featured />
-        {/* <NewsContainer /> */}
+        <Featured handleTechLink={this.handleTechLink} />
+        <NewsCard news={this.state.news} />
       </div>
     );
   }

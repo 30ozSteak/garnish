@@ -1,9 +1,9 @@
 import React from "react";
 import "./NewsCard.css";
 
-const NewsCard = ({ news, title, urlToImage, description, url }) => {
-  let newsArray = news;
-  const newsCard = newsArray.map(article => {
+const NewsCard = ({ news }) => {
+  let newsArray = news || [];
+  return newsArray.map(article => {
     return (
       <div className="cat-box">
         <h1 className="article-title">{article.title}</h1>

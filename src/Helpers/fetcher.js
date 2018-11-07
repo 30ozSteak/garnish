@@ -1,16 +1,10 @@
 import { Key } from "../Key";
 import { fetchRequest } from "../Helpers/apicaller";
 
-export const fetchTechNews = async => {
-  try {
-    const response = fetchRequest(
-      `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`
-    );
-    console.log(response);
-    return response;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+export const fetchTechNews = async () => {
+  return await fetchRequest(
+    `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`
+  );
 };
 
 export const fetchMemes = async => {

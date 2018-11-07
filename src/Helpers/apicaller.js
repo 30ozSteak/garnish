@@ -4,5 +4,6 @@ export const fetchRequest = async url => {
     return await response.json();
   } catch (error) {
     console.log(error);
+    return error;
   }
 };

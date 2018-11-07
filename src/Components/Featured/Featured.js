@@ -2,10 +2,14 @@ import React from "react";
 import "./Featured.css";
 import Channels from "../../Containers/Channels/Channels";
 
-const Featured = () => (
+const Featured = ({ handleTechLink }) => (
   <div className="featured-container">
     <div className="featured-box">
-      <Channels channelName="tech" channelString="new in tech, today" />
+      <Channels
+        channelName="tech"
+        channelString="new in tech, today"
+        handleTechLink={handleTechLink}
+      />
       <Channels
         channelName="memes"
         channelString="fortnite floss, kids falling over, the works"
