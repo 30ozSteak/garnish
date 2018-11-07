@@ -3,7 +3,7 @@ import "./News.css";
 
 const News = () => {
   return (
-    <div className="categories">
+    <div className="news-box">
       <h1> Your news </h1>
       <div className="cat-box" />
     </div>
