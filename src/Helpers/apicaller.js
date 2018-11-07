@@ -7,8 +7,8 @@ export const fetchRequest = async url => {
   }
 };
 
-export const techCrunch = async data => {
-  let techDetails = data.articles.map(article => {
+export const cleanedUp = async data => {
+  let cleanObj = data.articles.map(article => {
     let articleObj = {
       title: article.title,
       author: article.arthur,
@@ -19,5 +19,5 @@ export const techCrunch = async data => {
     };
     return articleObj;
   });
-  return techDetails;
+  return cleanObj;
 };
