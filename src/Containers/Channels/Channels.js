@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { getChannel, activateChannel } from "../../Actions/index";
-import { fetchLatestTech } from "../../Helpers/apicaller";
+import { getChannel } from "../../Actions/index";
+// import { fetchLatestTech } from "../../Helpers/apicaller";
 import "../../Components/Featured/Featured";
 
 export const Channel = ({ channelName, channelString, onClick, active }) => (
