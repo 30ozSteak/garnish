@@ -6,7 +6,6 @@ import { fabActive } from "./fabActive";
 
 export const rootReducer = combineReducers({
   darkMode,
-  isLoading,
   initialLoading,
   fabActive
 });
