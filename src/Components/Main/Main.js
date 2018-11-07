@@ -11,6 +11,8 @@ import {
   fetchCulture,
   fetchTopNews
 } from "../../Helpers/fetcher";
+import { updateNews } from "../../Actions/index";
+import { connect } from "react-redux";
 
 class Main extends Component {
   constructor() {
@@ -25,6 +27,7 @@ class Main extends Component {
     this.setState({
       news: tech.articles
     });
+    this.props.updateNews(tech.articles);
   };
 
   handleMemeLink = async () => {
@@ -32,6 +35,7 @@ class Main extends Component {
     this.setState({
       news: meme.articles
     });
+    this.props.updateNews(meme.articles);
   };
 
   handleAbramovLink = async () => {
@@ -39,6 +43,7 @@ class Main extends Component {
     this.setState({
       news: abramov.articles
     });
+    this.props.updateNews(abramov.articles);
   };
 
   handleCultureLink = async () => {
@@ -46,6 +51,7 @@ class Main extends Component {
     this.setState({
       news: culture.articles
     });
+    this.props.updateNews(culture.articles);
   };
 
   handleTopNewsLink = async () => {
@@ -75,4 +81,11 @@ class Main extends Component {
     );
   }
 }
-export default Main;
+export const mapDispatchToProps = dispatch => ({
+  updateNews: news => dispatch(updateNews(news))
+});
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Main);
