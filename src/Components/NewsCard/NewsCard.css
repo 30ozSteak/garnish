@@ -7,3 +7,16 @@
 .news-box h1 {
   width: 20rem;
 }
+
+.cat-box {
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 5px 5px 20px lightgray;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.cat-box img {
+  width: 100%;
+  filter: brightness(110%);
+}
