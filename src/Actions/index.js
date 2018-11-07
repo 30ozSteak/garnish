@@ -4,15 +4,20 @@ export const REQUEST_POSTS = "REQUEST_POSTS";
 export const RECEIVE_POSTS = "RECEIVE_POSTS";
 
 export const getChannel = channel => ({
-  type: SELECT_CHANNEL,
+  type: "SELECT_CHANNEL",
   channel
 });
 
 export const requestPosts = () => ({
-  type: REQUEST_POSTS
+  type: "REQUEST_POSTS"
 });
 
 export const receivedPosts = json => ({
-  type: RECEIVE_POSTS,
+  type: "RECEIVE_POSTS",
   json: json.articles
+});
+
+export const isLoading = status => ({
+  type: "IS_LOADING",
+  status
 });
