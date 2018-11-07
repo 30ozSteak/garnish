@@ -27,6 +27,6 @@ export const fetchCulture = async () => {
 
 export const fetchTopNews = async () => {
   return await fetchRequest(
-    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Key}`
+    `https://newsapi.org/v2/everything?q=top-news&apiKey=${Key}`
   );
 };

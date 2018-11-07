@@ -9,7 +9,7 @@ const NewsCard = ({ news }) => {
         <h1 className="article-title">{article.title}</h1>
         <img src={article.urlToImage} alt="" />
         <p className="article-desc">
-          {article.description.slice(0, 100) + `...`}
+          {article.description.slice(0, 50) + `...`}
         </p>
         <a href={article.url} className="article-link">
           {" "}
