@@ -2,15 +2,12 @@ import React from "react";
 import { Key } from "../Key.js";
 import Loading from "../Components/Loading/Loading";
 
-export const fetchLatestTech = async category => {
+export const fetchRequest = async url => {
   try {
-    const response = await fetch(
-      `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`
-    );
-    const techNews = await response.json();
-    return techNews;
-  } catch {
-    return <Loading />;
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    console.log(error);
   }
 };
 

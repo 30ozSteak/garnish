@@ -6,7 +6,7 @@ const Featured = () => (
   <div className="featured-container">
     <div className="featured-box">
       <Channels
-        channelName="tech"
+        channelName="CNN"
         channelString="wait are hooks replacing redux?"
       />
       <Channels
