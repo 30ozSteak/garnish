@@ -1,4 +1,4 @@
-import { NewsCard } from "./NewsCard";
+import NewsCard from "./NewsCard";
 import React from "react";
 import { shallow } from "enzyme";
 

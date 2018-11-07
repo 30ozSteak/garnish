@@ -1,3 +1,9 @@
 export const darkMode = (state = false, action) => {
-  return action.type === "TOGGLE_DARKMODE" ? action.status : state;
+  switch (action.type) {
+    case "TOGGLE_DARKMODE":
+      return !state;
+
+    default:
+      return state;
+  }
 };

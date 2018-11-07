@@ -1,34 +1,35 @@
 import React, { Component } from "react";
 import Logo from "../Brand/Logo";
 import "./Header.css";
+import { isDarkMode } from "../../Actions/";
+import { connect } from "react-redux";
 
-class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      darkMode: false
-    };
-  }
+const Header = (props) => {
 
-  toggleDarkMode = () => {
-    this.setState({
-      darkMode: !this.state.darkMode
-    });
-  };
+  props.isDarkMode ? <Box {...props} /> :
 
-  render() {
-    const { darkMode } = this.state;
-    return (
-      <div className="mucho-header-box">
-        <Logo />
-        <div />
-        <div
-          onClick={this.toggleDarkMode}
-          className={darkMode ? "light-mode" : "dark-mode"}
-        />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="mucho-header-box">
+      <Logo />
+      <div />
+      <div
+        onClick={props.toggleDarkMode}
+        props.isDarkmode={darkMode ? "light-mode" : "dark-mode"}
 
-export default Header;
+      />
+    </div>
+  );
+};
+
+export const mapStateToProps = state => ({
+  isDarkMode: state.isDarkMode
+});
+
+export const mapDispatchToProps = dispatch => ({
+  toggleDarkMode: () => dispatch(isDarkMode())
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Header);
