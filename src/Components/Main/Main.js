@@ -14,7 +14,7 @@ import {
 import { updateNews } from "../../Actions/index";
 import { connect } from "react-redux";
 
-class Main extends Component {
+export class Main extends Component {
   handleTechLink = async () => {
     const tech = await fetchTechNews();
     this.props.updateNews(tech.articles);
