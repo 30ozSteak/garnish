@@ -1,15 +1,15 @@
-.categories {
-  margin-top: 3rem;
+.news-box {
+  margin-top: 0rem;
   padding: 1rem;
   color: var(--NotBlack);
 }
 
-.categories h1 {
+.news-box h1 {
   width: 20rem;
 }
 
 .cat-box {
-  background-color: blue;
+  background-color: var(--GFmint);
   height: 100vh;
   width: 100%;
 }
