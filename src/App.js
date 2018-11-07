@@ -2,24 +2,21 @@ import React, { Component } from "react";
 import LandingLoading from "./Components/Brand/LandingLoading";
 import { Route, withRouter, Switch } from "react-router-dom";
 import { connect } from "react-redux";
-import Fab from "./Components/Fab/Fab";
-import HomeHeader from "./Components/HomeHeader/HomeHeader";
-import Header from "./Components/Header/Header";
-import Featured from "./Components/Featured/Featured";
-import Loading from "./Components/Loading/Loading";
-import News from "./Components/News/News";
+import Main from "./Components/Main/Main";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      news: []
+    };
+  }
+
   render() {
     return (
       <div className="App">
-        <Header />
-        {/* <LandingLoading /> */}
-        {/* <Loading /> */}
-        <Fab />
-        <HomeHeader />
-        <Featured />
-        <News />
+        <Route exact path="/" component={LandingLoading} />
+        <Route exact path="/main" component={Main} />
       </div>
     );
   }
@@ -32,9 +29,6 @@ export const mapStateToProps = state => ({
   fabActive: state.fabActive
 });
 
-// export const mapDispatchToProps = dispatch => ({
-
-// });
 export default withRouter(
   connect(
     mapStateToProps,

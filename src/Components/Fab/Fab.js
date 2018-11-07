@@ -22,12 +22,13 @@ export default class Menu extends Component {
       <div className="menu">
         <div className="menu-button" onClick={this.toggleActive} />
         <ul className={this.state.buttonState}>
-          <span onClick={this.toggleActive} className='cross'><p>+</p></span>
+          <span onClick={this.toggleActive} className="cross">
+            <p>+</p>
+          </span>
           <div>
-            <NavLink to="/home" onClick={this.props.handlePeopleLink} />
-            <NavLink to="/notes" onClick={this.props.handleNotesLink} />
-            <NavLink to="/settings" onClick={this.props.handleSettingsLink} />
-
+            <NavLink to="/" />
+            <NavLink to="/notes" />
+            <NavLink to="/settings" />
           </div>
         </ul>
       </div>

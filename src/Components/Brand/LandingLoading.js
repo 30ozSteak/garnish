@@ -2,6 +2,7 @@ import React from "react";
 import "../Brand/LandingLoading";
 import "../Brand/LandingLoading.css";
 import "../../Styles/colors.css";
+import { NavLink } from "react-router-dom";
 
 const LandingLoading = () => {
   return (
@@ -19,6 +20,7 @@ const LandingLoading = () => {
           <span className="ish">ish</span>
         </h1>
         <p className="logo-subtitle">a trim of news for your day</p>
+        <NavLink to="/">continue</NavLink>
       </div>
     </div>
   );
