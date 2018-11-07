@@ -26,9 +26,9 @@ export default class Menu extends Component {
             <p>+</p>
           </span>
           <div>
-            <NavLink to="/" onClick={this.props.handlePeopleLink} />
-            <NavLink to="/notes" onClick={this.props.handleNotesLink} />
-            <NavLink to="/settings" onClick={this.props.handleSettingsLink} />
+            <NavLink to="/" />
+            <NavLink to="/notes" />
+            <NavLink to="/settings" />
           </div>
         </ul>
       </div>
