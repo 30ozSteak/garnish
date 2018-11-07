@@ -5,17 +5,17 @@ import Channels from "../../Containers/Channels/Channels";
 const Featured = () => (
   <div className="featured-container">
     <div className="featured-box">
-      <Channels
-        channelName="CNN"
-        channelString="wait are hooks replacing redux?"
-      />
+      <Channels channelName="tech" channelString="new in tech, today" />
       <Channels
         channelName="memes"
-        channelString="what the h*ck is a fortnite floss"
+        channelString="fortnite floss, kids falling over, the works"
       />
       <Channels channelName="abramov" channelString="whatever dan says" />
       <Channels channelName="culture" channelString="learn some things" />
-      <Channels channelName="top" channelString="for when you want to be sad" />
+      <Channels
+        channelName="top news"
+        channelString="for when you want to be sad"
+      />
     </div>
     <p className="scroll-text">scroll for more</p>
   </div>
