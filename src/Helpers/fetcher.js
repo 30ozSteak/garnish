@@ -13,35 +13,20 @@ export const fetchMemes = async () => {
   );
 };
 
-export const fetchAbramov = async => {
-  try {
-    const response = fetchRequest(
-      `https://newsapi.org/v2/everything?q=dan+abramov&apiKey=${Key}`
-    );
-    return response;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+export const fetchAbramov = async () => {
+  return await fetchRequest(
+    `https://newsapi.org/v2/everything?q=dan+abramov&apiKey=${Key}`
+  );
 };
 
-export const fetchCulture = async => {
-  try {
-    const response = fetchRequest(
-      `https://newsapi.org/v2/top-headlines?q=culture&apiKey=${Key}`
-    );
-    return response;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+export const fetchCulture = async () => {
+  return await fetchRequest(
+    `https://newsapi.org/v2/top-headlines?q=culture&apiKey=${Key}`
+  );
 };
 
-export const fetchTopNews = async topic => {
-  try {
-    const response = fetchRequest(
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Key}`
-    );
-    return response;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+export const fetchTopNews = async () => {
+  return await fetchRequest(
+    `https://newsapi.org/v2/top-headlines?country=us&apiKey=${Key}`
+  );
 };

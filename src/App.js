@@ -29,7 +29,6 @@ class App extends Component {
     this.setState({
       news: tech.articles
     });
-    console.log(tech);
   };
 
   handleMemeLink = async () => {
@@ -37,7 +36,6 @@ class App extends Component {
     this.setState({
       news: meme.articles
     });
-    console.log(meme);
   };
 
   handleAbramovLink = async () => {
@@ -72,6 +70,9 @@ class App extends Component {
         <Featured
           handleTechLink={this.handleTechLink}
           handleMemeLink={this.handleMemeLink}
+          handleAbramovLink={this.handleAbramovLink}
+          handleCultureLink={this.handleCultureLink}
+          handleTopNewsLink={this.handleTopNewsLink}
         />
         <NewsCard news={this.state.news} />
       </div>
