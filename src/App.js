@@ -21,7 +21,7 @@ class App extends Component {
         <Fab />
         <HomeHeader />
         <Featured />
-        <News />
+        {/* <News /> */}
         {/* <Article /> */}
         {/* <Route exact path="/" component={LandingLoading} /> */}
 
