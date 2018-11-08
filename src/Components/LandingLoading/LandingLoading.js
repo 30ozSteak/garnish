@@ -1,6 +1,6 @@
 import React from "react";
-import "../Brand/LandingLoading";
-import "../Brand/LandingLoading.css";
+import "../LandingLoading/LandingLoading";
+import "../LandingLoading/LandingLoading.css";
 import "../../Styles/colors.css";
 import { NavLink } from "react-router-dom";
 
