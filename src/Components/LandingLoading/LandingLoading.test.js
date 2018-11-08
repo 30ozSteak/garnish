@@ -1,6 +1,7 @@
 import React from "react";
-import LandingLoading from "./LandingLoading";
 import { shallow } from "enzyme";
+
+import LandingLoading from "./LandingLoading";
 
 describe("LandingLoading", () => {
   it("should render pretty neat landing animation that matches snapshot", () => {

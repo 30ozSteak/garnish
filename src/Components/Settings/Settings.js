@@ -1,6 +1,7 @@
 import React from "react";
-import "./Settings.css";
 import { NavLink } from "react-router-dom";
+
+import "./Settings.css";
 
 const Settings = () => {
   return (

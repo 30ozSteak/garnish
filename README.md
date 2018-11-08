@@ -2,17 +2,15 @@
 
 ## a trim of news for your day
 
-## Mobile First, Millenial Friendly
+Mobile First, Millenial Friendly
 
-<img src= "https://user-images.githubusercontent.com/34214595/48156599-02cb2780-e28b-11e8-8f08-d6d1d89cbf4d.png">
+<img src= "https://user-images.githubusercontent.com/34214595/48179154-f66ebb00-e2da-11e8-9d42-6c44f0eab089.png">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To run it, clone this repo, cd into it, and type
 
 ### `npm install`
 
 ### `npm start`
-
-## Project Specs
 
 This app was built for Turing School of Software and Design's _Binary Challenge_ project. We were randomly given an API and a target audience, and told to make an app for it. You can read more about the project specs [Here](http://frontend.turing.io/projects/binary-challenge.html)
 

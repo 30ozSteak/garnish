@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../../Components/Featured/Featured";
 
 export const Channels = ({ channelName, channelString, handleNews, type }) => (

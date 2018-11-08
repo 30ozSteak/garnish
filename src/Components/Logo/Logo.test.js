@@ -1,6 +1,7 @@
 import React from "react";
-import Logo from "./Logo";
 import { shallow } from "enzyme";
+
+import Logo from "./Logo";
 
 describe("Logo", () => {
   it("should resemble the snapshot", () => {

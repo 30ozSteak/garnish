@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import "../LandingLoading/LandingLoading";
 import "../LandingLoading/LandingLoading.css";
 import "../../Styles/colors.css";
-import { NavLink } from "react-router-dom";
 
 const LandingLoading = () => {
   return (

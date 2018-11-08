@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import LandingLoading from "./Components/LandingLoading/LandingLoading";
 import { Route, withRouter, Switch } from "react-router-dom";
 import { connect } from "react-redux";
+
+import Faves from "./Components/Faves/Faves";
 import Main from "./Containers/Main/Main";
 import Settings from "./Components/Settings/Settings";
-import Faves from "./Components/Faves/Faves";
 import Wrong from "./Components/Wrong/Wrong";
 
 export class App extends Component {

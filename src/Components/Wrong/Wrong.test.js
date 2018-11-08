@@ -1,6 +1,7 @@
 import React from "react";
-import Wrong from "./Wrong";
 import { shallow } from "enzyme";
+
+import Wrong from "./Wrong";
 
 describe("Wrong way", () => {
   it("should resemble the snapshot", () => {

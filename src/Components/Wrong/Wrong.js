@@ -1,6 +1,7 @@
 import React from "react";
-import "./Wrong.css";
 import { NavLink } from "react-router-dom";
+
+import "./Wrong.css";
 
 const Wrong = () => {
   return (
