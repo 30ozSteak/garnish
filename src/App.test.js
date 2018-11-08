@@ -14,14 +14,12 @@ describe("App", () => {
   });
 
   it("map state to props should return dark mode state", () => {
-    const expected = {
-      darkMode: false
-    };
+    const expected = false;
     const initialState = {
       darkMode: false
     };
     const results = mapStateToProps(initialState);
 
-    expect(results).toEqual(expected);
+    expect(results.darkMode).toEqual(expected);
   });
 });

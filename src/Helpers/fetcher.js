@@ -1,32 +1,28 @@
 import { Key } from "../Key";
 import { fetchRequest } from "../Helpers/apicaller";
 
-export const fetchTechNews = async () => {
+export const fetchNews = async type => {
+  let path = "";
+  switch (type) {
+    case "tech":
+      path = "q=tech";
+      break;
+    case "memes":
+      path = "q=memes";
+      break;
+    case "abramov":
+      path = "q=dan+abramov";
+      break;
+    case "culture":
+      path = "q=culture";
+      break;
+    case "top":
+      path = "q=top-news";
+      break;
+    default:
+      path = "q=butts";
+  }
   return await fetchRequest(
-    `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${Key}`
-  );
-};
-
-export const fetchMemes = async () => {
-  return await fetchRequest(
-    `https://newsapi.org/v2/everything?q=meme&apiKey=${Key}`
-  );
-};
-
-export const fetchAbramov = async () => {
-  return await fetchRequest(
-    `https://newsapi.org/v2/everything?q=dan+abramov&apiKey=${Key}`
-  );
-};
-
-export const fetchCulture = async () => {
-  return await fetchRequest(
-    `https://newsapi.org/v2/everything?q=culture&apiKey=${Key}`
-  );
-};
-
-export const fetchTopNews = async () => {
-  return await fetchRequest(
-    `https://newsapi.org/v2/everything?q=top-news&apiKey=${Key}`
+    `https://newsapi.org/v2/everything?${path}&apiKey=${Key}`
   );
 };

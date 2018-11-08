@@ -22,9 +22,7 @@ export class App extends Component {
   }
 }
 
-export const mapStateToProps = state => ({
-  darkMode: state.darkMode
-});
+export const mapStateToProps = state => state;
 
 export default withRouter(
   connect(
