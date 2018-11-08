@@ -12,11 +12,11 @@ const LandingLoading = () => {
           <span className="slot-value slot-value-initial slot-value-slide-out">
             news
           </span>
-          <span clasSName="slot-value slot-cycle">technology</span>
-          <span clasSName="slot-value slot-cycle">diversity</span>
-          <span clasSName="slot-value slot-cycle">meme</span>
-          <span clasSName="slot-value slot-cycle">culture</span>
-          <span clasSName="slot-value slot-cycle slot-value-final">garn</span>
+          <span className="slot-value slot-cycle">technology</span>
+          <span className="slot-value slot-cycle">diversity</span>
+          <span className="slot-value slot-cycle">meme</span>
+          <span className="slot-value slot-cycle">culture</span>
+          <span className="slot-value slot-cycle slot-value-final">garn</span>
           <span className="ish">ish</span>
         </h1>
         <p className="logo-subtitle">a trim of news for your day</p>
