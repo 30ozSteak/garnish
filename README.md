@@ -1,8 +1,12 @@
 # garnish
-
 ## a trim of news for your morning
-
 Mobile First, Millenial Friendly
+
+
+
+## This app is deployed on Heroku
+[Heroku](https://garn-ish.herokuapp.com/)
+
 
 <img src= "https://user-images.githubusercontent.com/34214595/48179154-f66ebb00-e2da-11e8-9d42-6c44f0eab089.png">
 
