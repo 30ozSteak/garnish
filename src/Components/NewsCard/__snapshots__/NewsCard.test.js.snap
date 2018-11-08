@@ -1,14 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NewsCard should resemble the snapshot 1`] = `
+exports[`NewsCard should resemble the snaspshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NewsCard
-    description="article.description"
-    title="article.title"
-    url="article.url"
-    urlToImage="article.urlToImage"
-  />,
+  Symbol(enzyme.__unrendered__): <NewsCard />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

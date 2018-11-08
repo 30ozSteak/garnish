@@ -28,7 +28,6 @@
   left: 0;
   overflow: hidden;
   position: absolute;
-  top: 0;
   transform: scale(0);
   transition: 0.5s;
   width: 100%;
@@ -55,7 +54,7 @@
   background-size: 20px;
   filter: brightness(105%);
   transition-delay: 0s;
-  top: -100%;
+  top: -195%;
   z-index: 2;
 }
 
@@ -64,7 +63,7 @@
   background-color: var(--GFmint);
   background-repeat: no-repeat;
   background-size: 20px;
-  top: -200%;
+  top: -295%;
   transition-delay: 0.2s;
   filter: brightness(110%);
   z-index: 1;
@@ -76,7 +75,7 @@
   background-repeat: no-repeat;
   background-size: 20px;
   filter: brightness(115%);
-  top: -300%;
+  top: -395%;
   transition-delay: 0.4s;
   z-index: 0;
 }

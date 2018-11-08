@@ -1,5 +1,5 @@
 import React from "react";
-import "../Brand/Logo.css";
+import "../Logo/Logo.css";
 
 const Logo = () => {
   return (

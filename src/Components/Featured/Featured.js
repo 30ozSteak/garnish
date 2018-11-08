@@ -1,43 +1,42 @@
 import React from "react";
 import "./Featured.css";
-import Channels from "../../Containers/Channels/Channels";
+import Channels from "../../Components/Channels/Channels";
 
-const Featured = ({
-  handleTechLink,
-  handleMemeLink,
-  handleAbramovLink,
-  handleCultureLink,
-  handleTopNewsLink
-}) => (
+const Featured = ({ handleNewsLink }) => (
   <div className="featured-container">
     <div className="featured-box">
       <Channels
         channelName="tech"
         channelString="new in tech, today"
-        handleFetch={handleTechLink}
+        handleNews={handleNewsLink}
+        type={"tech"}
       />
       <Channels
         channelName="memes"
         channelString="fortnite floss, kids falling over, the works"
-        handleFetch={handleMemeLink}
+        handleNews={handleNewsLink}
+        type={"memes"}
       />
       <Channels
         channelName="abramov"
         channelString="whatever dan says"
-        handleFetch={handleAbramovLink}
+        handleNews={handleNewsLink}
+        type={"abramov"}
       />
       <Channels
         channelName="culture"
         channelString="learn some things"
-        handleFetch={handleCultureLink}
+        handleNews={handleNewsLink}
+        type={"culture"}
       />
       <Channels
         channelName="top news"
         channelString="for when you want to be sad"
-        handleFetch={handleTopNewsLink}
+        handleNews={handleNewsLink}
+        type={"top"}
       />
     </div>
-    <p className="scroll-text">scroll for more</p>
+    <p className="scroll-text">scroll</p>
   </div>
 );
 

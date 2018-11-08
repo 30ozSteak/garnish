@@ -3,16 +3,8 @@ import React from "react";
 import { shallow } from "enzyme";
 
 describe("NewsCard", () => {
-  let wrapper = shallow(
-    <NewsCard
-      title="article.title"
-      urlToImage="article.urlToImage"
-      description="article.description"
-      url="article.url"
-    />
-  );
-
-  it("should resemble the snapshot", () => {
+  it("should resemble the snaspshot", () => {
+    const wrapper = shallow(<NewsCard />);
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,8 +1,8 @@
 import React from "react";
 import "../../Components/Featured/Featured";
 
-export const Channels = ({ channelName, channelString, handleFetch }) => (
-  <div onClick={handleFetch} className="channel-box">
+export const Channels = ({ channelName, channelString, handleNews, type }) => (
+  <div onClick={() => handleNews(type)} className="channel-box">
     <div className="channel-button">
       <p>{channelName}</p>
       <p className="channel-desc">{channelString}</p>
