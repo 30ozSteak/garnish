@@ -11,7 +11,7 @@ const LandingLoading = () => {
       <div className="slot-box">
         <h1 className="slot-machine">
           <span className="slot in out">news</span>
-          <span className="slot cycle">technology</span>
+          <span className="slot cycle">tech</span>
           <span className="slot cycle">diversity</span>
           <span className="slot cycle">meme</span>
           <span className="slot cycle">culture</span>
