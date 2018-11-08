@@ -1,6 +1,6 @@
 import React from "react";
-import { shallow } from "enzyme";
 import { App, mapStateToProps, mapDispatchToProps } from "./App.js";
+import { shallow } from "enzyme";
 
 describe("App", () => {
   let wrapper;

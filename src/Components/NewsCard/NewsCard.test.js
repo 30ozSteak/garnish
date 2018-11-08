@@ -1,6 +1,7 @@
-import NewsCard from "./NewsCard";
 import React from "react";
 import { shallow } from "enzyme";
+
+import NewsCard from "./NewsCard";
 
 describe("NewsCard", () => {
   it("should resemble the snaspshot", () => {

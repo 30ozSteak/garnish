@@ -1,6 +1,7 @@
 import React from "react";
-import Featured from "./Featured";
 import { shallow } from "enzyme";
+
+import Featured from "./Featured";
 
 describe("Featured", () => {
   it("should resemble the snapshot", () => {

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import "./NewsContainer.css";
-import NewsCard from "../../Components/NewsCard/NewsCard";
 import { connect } from "react-redux";
 import { updateNews } from "../../Actions/index";
+
+import NewsCard from "../../Components/NewsCard/NewsCard";
+import "./NewsContainer.css";
 
 export class NewsContainer extends Component {
   render() {

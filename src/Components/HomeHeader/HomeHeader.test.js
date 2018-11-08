@@ -1,6 +1,7 @@
 import React from "react";
-import HomeHeader from "./HomeHeader";
 import { shallow } from "enzyme";
+
+import HomeHeader from "./HomeHeader";
 
 describe("HomeHeader", () => {
   it("should resemble the snapshot", () => {

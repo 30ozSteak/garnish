@@ -1,6 +1,7 @@
 import React from "react";
-import "./Faves.css";
 import { NavLink } from "react-router-dom";
+
+import "./Faves.css";
 
 const Faves = () => {
   return (

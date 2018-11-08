@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Header from "../../Containers/Header/Header";
-import Fab from "../../Components/Fab/Fab";
-import HomeHeader from "../../Components/HomeHeader/HomeHeader";
-import Featured from "../../Components/Featured/Featured";
-import NewsCard from "../../Components/NewsCard/NewsCard";
+import { connect } from "react-redux";
 import { fetchNews } from "../../Helpers/fetcher";
 import { updateNews } from "../../Actions/index";
-import { connect } from "react-redux";
-import NewsContainer from "../../Components/NewsContainer/NewsContainer";
+
+import Fab from "../../Components/Fab/Fab";
+import Featured from "../../Components/Featured/Featured";
+import Header from "../../Containers/Header/Header";
+import HomeHeader from "../../Components/HomeHeader/HomeHeader";
+import NewsContainer from "../../Containers/NewsContainer/NewsContainer";
 
 export class Main extends Component {
   handleNewsLink = async type => {

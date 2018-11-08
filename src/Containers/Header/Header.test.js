@@ -1,8 +1,9 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Header from "./Header";
 import { connect } from "react-redux";
 import { darkMode, mapDispatchToProps, mapStateToProps } from "./Header";
+
+import Header from "./Header";
 
 describe("Header", () => {
   it("should resemble the snapshot", () => {

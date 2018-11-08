@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import Logo from "../../Components/Logo/Logo";
-import "./Header.css";
 import { isDarkMode } from "../../Actions/";
 import { connect } from "react-redux";
+import "./Header.css";
+
+import Logo from "../../Components/Logo/Logo";
 
 class Header extends Component {
   constructor() {
