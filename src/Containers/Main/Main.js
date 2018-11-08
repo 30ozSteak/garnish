@@ -7,6 +7,8 @@ import NewsCard from "../../Components/NewsCard/NewsCard";
 import { fetchNews } from "../../Helpers/fetcher";
 import { updateNews } from "../../Actions/index";
 import { connect } from "react-redux";
+import "./Main.css";
+import NewsContainer from "../../Components/NewsContainer/NewsContainer";
 
 export class Main extends Component {
   handleNewsLink = async type => {
@@ -16,13 +18,13 @@ export class Main extends Component {
 
   render() {
     return (
-      <div>
+      <div className="busted-box">
         <Header />
         <Fab />
         <HomeHeader />
         <Featured handleNewsLink={this.handleNewsLink} />
         <div className="biggest-news-box">
-          <NewsCard news={this.props.news} />
+          <NewsContainer />
         </div>
       </div>
     );
