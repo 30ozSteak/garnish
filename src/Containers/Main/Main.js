@@ -7,7 +7,6 @@ import NewsCard from "../../Components/NewsCard/NewsCard";
 import { fetchNews } from "../../Helpers/fetcher";
 import { updateNews } from "../../Actions/index";
 import { connect } from "react-redux";
-import "./Main.css";
 import NewsContainer from "../../Components/NewsContainer/NewsContainer";
 
 export class Main extends Component {
@@ -25,12 +24,14 @@ export class Main extends Component {
         <Featured handleNewsLink={this.handleNewsLink} />
         <div className="biggest-news-box">
           <NewsContainer />
+          {/* <NewsCard news={this.props.news} /> */}
         </div>
       </div>
     );
   }
 }
 
+// export default Main;
 export const mapStateToProps = ({ news }) => ({
   news
 });

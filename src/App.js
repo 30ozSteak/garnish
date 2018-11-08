@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import LandingLoading from "./Components/LandingLoading/LandingLoading";
 import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import Main from "./Components/Main/Main";
+import Main from "./Containers/Main/Main";
 
 export class App extends Component {
   constructor() {
