@@ -1,6 +1,6 @@
 # garnish
 
-## a trim of news for your day
+## a trim of news for your morning
 
 Mobile First, Millenial Friendly
 
