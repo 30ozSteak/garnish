@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import LandingLoading from "./Components/LandingLoading/LandingLoading";
-import { Route, withRouter } from "react-router-dom";
+import { Route, withRouter, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import Main from "./Containers/Main/Main";
 import Settings from "./Components/Settings/Settings";
 import Faves from "./Components/Faves/Faves";
+import Wrong from "./Components/Wrong/Wrong";
 
 export class App extends Component {
   constructor() {
@@ -17,10 +18,13 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route exact path="/" component={LandingLoading} />
-        <Route exact path="/main" component={Main} />
-        <Route exact path="/settings" component={Settings} />
-        <Route exact path="/faves" component={Faves} />
+        <Switch>
+          <Route exact path="/" component={LandingLoading} />
+          <Route exact path="/main" component={Main} />
+          <Route exact path="/settings" component={Settings} />
+          <Route exact path="/faves" component={Faves} />
+          <Route component={Wrong} />
+        </Switch>
       </div>
     );
   }
