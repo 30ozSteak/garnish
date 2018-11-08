@@ -24,14 +24,12 @@ export class Main extends Component {
         <Featured handleNewsLink={this.handleNewsLink} />
         <div className="biggest-news-box">
           <NewsContainer />
-          {/* <NewsCard news={this.props.news} /> */}
         </div>
       </div>
     );
   }
 }
 
-// export default Main;
 export const mapStateToProps = ({ news }) => ({
   news
 });

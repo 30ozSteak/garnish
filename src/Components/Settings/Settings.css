@@ -1,0 +1,11 @@
+.settings-box-settings {
+  padding: 3rem;
+  height: 4rem;
+}
+
+.settings-box-settings p,
+a {
+  text-decoration: none;
+  color: gray;
+  margin-top: 3rem;
+}

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./NewsContainer.css";
-import { fetchNews } from "../../Helpers/fetcher";
 import NewsCard from "../../Components/NewsCard/NewsCard";
 import { connect } from "react-redux";
 import { updateNews } from "../../Actions/index";

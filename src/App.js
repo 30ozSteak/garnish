@@ -3,6 +3,7 @@ import LandingLoading from "./Components/LandingLoading/LandingLoading";
 import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Main from "./Containers/Main/Main";
+import Settings from "./Components/Settings/Settings";
 
 export class App extends Component {
   constructor() {
@@ -17,6 +18,7 @@ export class App extends Component {
       <div className="App">
         <Route exact path="/" component={LandingLoading} />
         <Route exact path="/main" component={Main} />
+        <Route exact path="/settings" component={Settings} />
       </div>
     );
   }
