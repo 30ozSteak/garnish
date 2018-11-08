@@ -1,0 +1,607 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingLoading should render pretty neat landing animation that matches snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LandingLoading />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="slot-box"
+        >
+          <h1
+            className="slot-machine"
+          >
+            <span
+              className="slot in out"
+            >
+              news
+            </span>
+            <span
+              className="slot cycle"
+            >
+              technology
+            </span>
+            <span
+              className="slot cycle"
+            >
+              diversity
+            </span>
+            <span
+              className="slot cycle"
+            >
+              meme
+            </span>
+            <span
+              className="slot cycle"
+            >
+              culture
+            </span>
+            <span
+              className="slot cycle slot-final"
+            >
+              garn
+            </span>
+            <span
+              className="ish"
+            >
+              ish
+            </span>
+          </h1>
+          <p
+            className="logo-subtitle"
+          >
+            a trim of news for your day
+          </p>
+        </div>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          to="/main"
+        >
+          continue
+        </NavLink>,
+      ],
+      "className": "bigger-slot-box",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="slot-machine"
+            >
+              <span
+                className="slot in out"
+              >
+                news
+              </span>
+              <span
+                className="slot cycle"
+              >
+                technology
+              </span>
+              <span
+                className="slot cycle"
+              >
+                diversity
+              </span>
+              <span
+                className="slot cycle"
+              >
+                meme
+              </span>
+              <span
+                className="slot cycle"
+              >
+                culture
+              </span>
+              <span
+                className="slot cycle slot-final"
+              >
+                garn
+              </span>
+              <span
+                className="ish"
+              >
+                ish
+              </span>
+            </h1>,
+            <p
+              className="logo-subtitle"
+            >
+              a trim of news for your day
+            </p>,
+          ],
+          "className": "slot-box",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="slot in out"
+                >
+                  news
+                </span>,
+                <span
+                  className="slot cycle"
+                >
+                  technology
+                </span>,
+                <span
+                  className="slot cycle"
+                >
+                  diversity
+                </span>,
+                <span
+                  className="slot cycle"
+                >
+                  meme
+                </span>,
+                <span
+                  className="slot cycle"
+                >
+                  culture
+                </span>,
+                <span
+                  className="slot cycle slot-final"
+                >
+                  garn
+                </span>,
+                <span
+                  className="ish"
+                >
+                  ish
+                </span>,
+              ],
+              "className": "slot-machine",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "news",
+                  "className": "slot in out",
+                },
+                "ref": null,
+                "rendered": "news",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "technology",
+                  "className": "slot cycle",
+                },
+                "ref": null,
+                "rendered": "technology",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "diversity",
+                  "className": "slot cycle",
+                },
+                "ref": null,
+                "rendered": "diversity",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "meme",
+                  "className": "slot cycle",
+                },
+                "ref": null,
+                "rendered": "meme",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "culture",
+                  "className": "slot cycle",
+                },
+                "ref": null,
+                "rendered": "culture",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "garn",
+                  "className": "slot cycle slot-final",
+                },
+                "ref": null,
+                "rendered": "garn",
+                "type": "span",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "ish",
+                  "className": "ish",
+                },
+                "ref": null,
+                "rendered": "ish",
+                "type": "span",
+              },
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "a trim of news for your day",
+              "className": "logo-subtitle",
+            },
+            "ref": null,
+            "rendered": "a trim of news for your day",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "continue",
+          "to": "/main",
+        },
+        "ref": null,
+        "rendered": "continue",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="slot-box"
+          >
+            <h1
+              className="slot-machine"
+            >
+              <span
+                className="slot in out"
+              >
+                news
+              </span>
+              <span
+                className="slot cycle"
+              >
+                technology
+              </span>
+              <span
+                className="slot cycle"
+              >
+                diversity
+              </span>
+              <span
+                className="slot cycle"
+              >
+                meme
+              </span>
+              <span
+                className="slot cycle"
+              >
+                culture
+              </span>
+              <span
+                className="slot cycle slot-final"
+              >
+                garn
+              </span>
+              <span
+                className="ish"
+              >
+                ish
+              </span>
+            </h1>
+            <p
+              className="logo-subtitle"
+            >
+              a trim of news for your day
+            </p>
+          </div>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            to="/main"
+          >
+            continue
+          </NavLink>,
+        ],
+        "className": "bigger-slot-box",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="slot-machine"
+              >
+                <span
+                  className="slot in out"
+                >
+                  news
+                </span>
+                <span
+                  className="slot cycle"
+                >
+                  technology
+                </span>
+                <span
+                  className="slot cycle"
+                >
+                  diversity
+                </span>
+                <span
+                  className="slot cycle"
+                >
+                  meme
+                </span>
+                <span
+                  className="slot cycle"
+                >
+                  culture
+                </span>
+                <span
+                  className="slot cycle slot-final"
+                >
+                  garn
+                </span>
+                <span
+                  className="ish"
+                >
+                  ish
+                </span>
+              </h1>,
+              <p
+                className="logo-subtitle"
+              >
+                a trim of news for your day
+              </p>,
+            ],
+            "className": "slot-box",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="slot in out"
+                  >
+                    news
+                  </span>,
+                  <span
+                    className="slot cycle"
+                  >
+                    technology
+                  </span>,
+                  <span
+                    className="slot cycle"
+                  >
+                    diversity
+                  </span>,
+                  <span
+                    className="slot cycle"
+                  >
+                    meme
+                  </span>,
+                  <span
+                    className="slot cycle"
+                  >
+                    culture
+                  </span>,
+                  <span
+                    className="slot cycle slot-final"
+                  >
+                    garn
+                  </span>,
+                  <span
+                    className="ish"
+                  >
+                    ish
+                  </span>,
+                ],
+                "className": "slot-machine",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "news",
+                    "className": "slot in out",
+                  },
+                  "ref": null,
+                  "rendered": "news",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "technology",
+                    "className": "slot cycle",
+                  },
+                  "ref": null,
+                  "rendered": "technology",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "diversity",
+                    "className": "slot cycle",
+                  },
+                  "ref": null,
+                  "rendered": "diversity",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "meme",
+                    "className": "slot cycle",
+                  },
+                  "ref": null,
+                  "rendered": "meme",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "culture",
+                    "className": "slot cycle",
+                  },
+                  "ref": null,
+                  "rendered": "culture",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "garn",
+                    "className": "slot cycle slot-final",
+                  },
+                  "ref": null,
+                  "rendered": "garn",
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "ish",
+                    "className": "ish",
+                  },
+                  "ref": null,
+                  "rendered": "ish",
+                  "type": "span",
+                },
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "a trim of news for your day",
+                "className": "logo-subtitle",
+              },
+              "ref": null,
+              "rendered": "a trim of news for your day",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "continue",
+            "to": "/main",
+          },
+          "ref": null,
+          "rendered": "continue",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
