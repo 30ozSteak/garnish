@@ -36,7 +36,7 @@ const Featured = ({ handleNewsLink }) => (
         type={"top"}
       />
     </div>
-    <p className="scroll-text">scroll for more</p>
+    <p className="scroll-text">scroll</p>
   </div>
 );
 

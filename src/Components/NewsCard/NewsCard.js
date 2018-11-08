@@ -12,7 +12,6 @@ const NewsCard = ({ news }) => {
           {article.description.slice(0, 50) + `...`}
         </p>
         <a href={article.url} className="article-link">
-          {" "}
           read more..
         </a>
       </div>
