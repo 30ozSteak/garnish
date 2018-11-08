@@ -1,6 +1,6 @@
 import React from "react";
 import "./Featured.css";
-import Channels from "../../Containers/Channels/Channels";
+import Channels from "../../Components/Channels/Channels";
 
 const Featured = ({ handleNewsLink }) => (
   <div className="featured-container">
