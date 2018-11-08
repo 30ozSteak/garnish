@@ -23,7 +23,3 @@ describe("mapStateToProps", () => {
     expect(mappedItToProps).toEqual(expected);
   });
 });
-
-describe("mapDispatchToProps", () => {
-  it.skip("calls dispatch with the isDarkMode action when clicked", () => {});
-});
