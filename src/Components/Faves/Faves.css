@@ -1,0 +1,8 @@
+.faves-box {
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.faves-box a:hover {
+  color: black;
+}

@@ -4,6 +4,7 @@ import { Route, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Main from "./Containers/Main/Main";
 import Settings from "./Components/Settings/Settings";
+import Faves from "./Components/Faves/Faves";
 
 export class App extends Component {
   constructor() {
@@ -19,6 +20,7 @@ export class App extends Component {
         <Route exact path="/" component={LandingLoading} />
         <Route exact path="/main" component={Main} />
         <Route exact path="/settings" component={Settings} />
+        <Route exact path="/faves" component={Faves} />
       </div>
     );
   }

@@ -26,8 +26,8 @@ export default class Menu extends Component {
           </span>
           <div>
             <NavLink to="/" />
-            <NavLink to="/faves" />
             <NavLink to="/settings" />
+            <NavLink to="/faves" />
           </div>
         </ul>
       </div>
