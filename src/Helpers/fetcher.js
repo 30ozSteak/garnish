@@ -23,6 +23,6 @@ export const fetchNews = async type => {
       path = "q=butts";
   }
   return await fetchRequest(
-    `https://newsapi.org/v2/everything?${path}&apiKey=${Key}`
+    `https://newsapi.org/v2/everything?${path}&from=2018-11-28&sortBy=publishedAt&apiKey=${Key}`
   );
 };
